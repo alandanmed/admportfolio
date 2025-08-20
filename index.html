@@ -1,394 +1,686 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADM DevOps</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/devops_logo.png">
-    <!-- Google tag (gtag.js) -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SBJ03RMQG"></script>
-     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-     gtag('config', 'G-6SBJ03RMQG');
-     </script>
-     <!-- End of Google Analytics Code -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Alan D. Medina's Website 🚀</title>
+	<meta name="description" content="Alan D. Medina's Resume & Personal Website">
+    <meta name="author" content="Alan D. Medina">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+  <!-- Email Init Script -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/email.js"></script>
+  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("M3CvhNGDIhjJnUlrw");
+    })();
+  </script>
+
+
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Alan Daniel Medina</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Alan D. Medina</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./images/profile-pic.png" atl="Alan Medina profile picture" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Alan D. Medina</h1>
-            <p class="section__text__p2">Software Engineer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Alan_D_Medina_Resume.pdf')">Download CV</button>
 
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./images/linkedin.png" alt="My Linkedin profile" class="icon" onclick="window.open('https://www.linkedin.com/in/alandmed/', '_blank')"/>
+<!-- preloader -->
+<div id="preloader">
+	<div class="outer">
+		<div class="spinner">
+			<div class="dot1"></div>
+			<div class="dot2"></div>
+		</div>
+	</div>
+</div>
 
-                <img src="./images/github.png" alt="My Github profile" class="icon" onclick="window.open('https://github.com/alandanmed', '_blank')"/>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./images/about-pic.png" alt="Profile picture" class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./images/experience.png" alt="Experience icon" class="icon"/>
-                        <h3>Experience</h3>
-                        <p>IT Assistant @ Peachtree Immediate Care - Snellville <br> Data Analytics Intern @ Georgia Institute of Technology Admission's <br> SWE Instructor @ KidsNextCode <br> SWE Reseacrher @ Georgia Institute of Technology GTRI</p>
+<!-- site wrapper -->
+<div class="site-wrapper">
+
+	<!-- mobile header -->
+	<div class="mobile-header py-2 px-3 mt-4">
+		<button class="menu-icon mr-2">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a href="index.html" class="logo"><img src="images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" /></a>
+		<a href="index.html" class="site-title ml-2">Alan D. Medina ⚡️</a>
+	</div>
+
+	<!-- header -->
+	<header class="left float-left shadow-dark" id="header">
+		<button type="button" class="close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="header-inner d-flex align-items-start flex-column">
+			<a href="index.html"><img src="images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" height="60px" width="120px"/></a>
+			<a href="index.html" class="site-title mt-3">Alan D. Medina</a>
+			<span class="site-slogan">Student | Developer | Leader</span>
+
+			<!-- navigation menu -->
+			<nav>
+				<ul class="vertical-menu scrollspy">
+					<li><a href="#home" class="active"><i class="icon-home"></i>Home</a></li>
+					<li><a href="#about"><i class="icon-user"></i>About</a></li>
+					<li><a href="#services"><i class="icon-energy"></i>Tech</a></li>
+					<li><a href="#resume"><i class="icon-graduation"></i>Resume</a></li>
+					<li><a href="#works"><i class="icon-grid"></i>Portfolio</a></li>
+					<li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
+				</ul>
+			</nav>
+
+
+			<!-- footer -->
+			<div class="footer mt-auto">
+
+				<!-- social icons -->
+				<ul class="social-icons list-inline">
+					<li class="list-inline-item"><a href="https://www.instagram.com/ex.alanm/#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/alandmed/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li class="list-inline-item"><a href="https://github.com/alandanmed" target="_blank"><i class="fab fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- main content area -->
+	<main class="content float-right">
+
+		<!-- section hero -->
+		<section class="hero background parallax shadow-dark d-flex align-items-center" id="home" data-image-src="images/ATL.png">
+			<div class="cta mx-auto mt-2">
+				<h1 class="mt-0 mb-4">I’m Alan 🚀</h1>
+				<p class="mb-4">Welcome to my website! I’m a computer science student at Georgia Tech who loves coding, building cool projects, and learning new tech. Take a look at what I’ve worked on and where I’m headed. 👌</p>
+				<a href="#works" class="btn btn-default btn-lg mr-3"><i class="icon-grid"></i>View Portfolio</a>
+				<div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
+				<a href="#contact" class="btn btn-border-light btn-lg"><i class="icon-envelope"></i>Contact me</a>
+			</div>
+			<div class="overlay"></div>
+		</section>
+
+		<!-- section about -->
+		<section id="about" class="shadow-blue white-bg padding">
+			<h3 class="section-title">About Me</h3>
+			<div class="spacer" data-height="80"></div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<img src="images/about-pic.png" alt="My Picture" style="border-radius: 15px;"/>
+				</div>
+				<div class="col-md-9">
+					<h2 class="mt-4 mt-md-0 mb-4">Hi 👋</h2>
+					<p class="mb-0">I'm Alan D. Medina, an aspiring software engineer & web developer from Atlanta, Georgia. I work a lot with Web Technologies such as React, Vue, Angular, Node, MongoDB, and more. I am a computer science student from the Georgia Institute of Technology and currently work as an IT SWE Intern at Peachtree Immediate Care.</p>
+					<div class="row my-4">
+						<div class="col-md-6">
+							<p class="mb-2">Name: <span class="text-dark">Alan D. Medina</span></p>
+							<p class="mb-0">Phone: <span class="text-dark">+1 (678) 654 4672</span></p>
+						</div>
+						<div class="col-md-6 mt-2 mt-md-0 mt-sm-2">
+							<p class="mb-2">Location: <span class="text-dark">Atlanta, GA</span></p>
+							<p class="mb-0">Email: <span class="text-dark">alandmedina13@gmail.com</span></p>
+						</div>
+					</div>
+					<a href="./Alan_D_Medina_Resume.pdf" class="btn btn-default mr-3" target="_blank"><i class="icon-cloud-download"></i>Download Resume</a>
+					<a href="#contact" class="btn btn-alt mt-2 mt-md-0 mt-xs-2" ><i class="icon-envelope"></i>Contact me</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- section skills -->
+		<section id="skills" class="shadow-blue white-bg padding">
+			<h3 class="section-title">My Skills</h3>
+			<div class="spacer" data-height="80"></div>
+
+			<p class="mb-0">I am working on becoming a more proficient full-stack developer. I am experienced with the major <code>JS</code> frameworks such as VueJS, React, and Angular. I am experienced with backend development in NodeJS, Express, and PHP Laravel, using popular databases such as MongoDB, mySQL, PostgresSQL, and Elastic.</p><br>
+
+			<div class="row mt-5">
+
+				<div class="col-md-6">
+					<!-- skill item -->
+					<div class="skill-item">
+						<div class="skill-info clearfix">
+							<h4 class="float-left mb-3 mt-0">Front-end Development</h4>
+							<span class="float-right">95%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
+							</div>
+						</div>
+						<div class="spacer" data-height="50"></div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<!-- skill item -->
+					<div class="skill-item">
+						<div class="skill-info clearfix">
+							<h4 class="float-left mb-3 mt-0">Back-end Development</h4>
+							<span class="float-right">90%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+							</div>
+						</div>
+						<div class="spacer" data-height="50"></div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<!-- skill item -->
+					<div class="skill-item">
+						<div class="skill-info clearfix">
+							<h4 class="float-left mb-3 mt-0">UI & UX</h4>
+							<span class="float-right">60%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+							</div>
+						</div>
+						<div class="spacer d-md-none d-lg-none" data-height="50"></div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<!-- skill item -->
+					<div class="skill-item">
+						<div class="skill-info clearfix">
+							<h4 class="float-left mb-3 mt-0">Mobile App Development</h4>
+							<span class="float-right">75%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- section facts -->
+		<section id="facts" class="shadow-dark color-white background parallax padding-50" data-image-src="images/ATL.png">
+
+			<div class="row relative z-1">
+				<div class="col-md-3 col-sm-6">
+					<!-- fact item -->
+					<div class="fact-item text-center">
+						<i class="fas fa-project-diagram icon-circle"></i><br>
+            <h2 class="count">20</h2>
+						<span>Projects Completed</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<!-- fact item -->
+					<div class="fact-item text-center">
+						<i class="fab fa-github-alt icon-circle"></i>
+						<h2 class="count">8</h2>
+						<span>Collaborative Projects on Github</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<!-- fact item -->
+					<div class="fact-item text-center">
+						<i class="fas fa-smile icon-circle"></i>
+						<h2 class="count">10</h2>
+						<span>Happy Clients</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<!-- fact item -->
+					<div class="fact-item text-center">
+						<i class="fas fa-laptop-code icon-circle"></i>
+						<h2 class="count">16789</h2>
+						<span>Lines of Code</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="overlay"></div>
+
+		</section>
+
+		<!-- section services -->
+		<section id="services" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Tech Stack</h3>
+			<div class="spacer" data-height="80"></div>
+
+			<div class="row">
+
+				<div class="col-md-4 col-sm-6">
+					<!-- service item -->
+					<div class="service-item text-center">
+            <i><img width ='22px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nuxtjs.svg'></i> +
+            <i><img width ='22px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/vuejs.svg'></i>
+						<h4 class="my-3">Nuxt and Vue</h4>
+						<p class="mb-0">Front-end framework of choice to develop applications</p>
+					</div>
+					<div class="spacer" data-height="20"></div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<!-- service item -->
+					<div class="service-item text-center">
+						<i><img width ='22px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/mongodb.svg'></i>
+						<h4 class="my-3">MongoDB</h4>
+						<p class="mb-0">Database of choice to store data</p>
+					</div>
+					<div class="spacer" data-height="20"></div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<!-- service item -->
+					<div class="service-item text-center">
+            <i><img width ='22px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/express.svg'></i>
+						<h4 class="my-3">ExpressJS</h4>
+						<p class="mb-0">Web server framework</p>
+					</div>
+					<div class="spacer" data-height="20"></div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<!-- service item -->
+					<div class="service-item text-center">
+            <i><img width ='22px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nodejs.svg'></i>
+						<h4 class="my-3">NodeJS</h4>
+						<p class="mb-0">Back-end runtime environment framework</p>
+					</div>
+					<div class="spacer d-md-none d-lg-none" data-height="20"></div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<!-- service item -->
+					<div class="service-item text-center">
+            <i><img width ='22px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/bulma.svg'></i>
+						<h4 class="my-3">Bulma</h4>
+						<p class="mb-0">Mobile-first responsive CSS library</p>
+					</div>
+					<div class="spacer d-md-none d-lg-none" data-height="20"></div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<!-- service item -->
+					<div class="service-item text-center">
+            <i><img width ='22px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/graphql.svg'></i>
+						<h4 class="my-3">GraphQL</h4>
+						<p class="mb-0">Paradigm for designing custom APIs</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- section experience -->
+		<section id="resume" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Experience</h3>
+			<div class="spacer" data-height="80"></div>
+
+			<!-- timeline -->
+			<div class="timeline">
+				<div class="entry">
+					<div class="title">
+						<span>Jan 2025 - Present</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">IT SWE Intern | Peachtree Immediate Care</h4>
+						<p> - Resolved 86+ technical support requests weekly across 5+ clinic locations via a centralized ticketing system, consistently resolving issues within 24 hours and reducing clinic downtime by 23%<p>
+						<p>	- Developed and deployed internal scripts to automate configuration checks and system diagnostics during 15+ network upgrades, improving IT response time and ensuring compliance with HIPAA security standards</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>Dec 2024 - Present</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Data Analytics Intern | Georgia Institute of Technology Admission’s Office</h4>
+						<p> - Contributed to outreach presentations in collaboration with an admissions officer to connect with over 500 students from underrepresented communities, advocating for DEI services and support programs at Georgia Tech</p>
+						<p> - Analyzed admissions data for 5,000+ applicants using Excel, identifying trends in yield and enrollment rates to inform recruitment strategies targeting underserved populations</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>Jun 2024 - Aug 2024</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Programming Instructor Intern | KidsNextCode</h4>
+						<p> - Developed a 6-week, 12-module coding curriculum with a focus on hands-on projects in Python, JavaScript, and HTML; improved student comprehension as reflected by a 30% increase in assessment scores</p>
+						<p> - Mentored 150+ middle and high school students in web and game development, delivering foundational programming education</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>Mar 2024 - Aug 2024</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Latinx Student Leadership Summit Fellow | Google</h4>
+						<p> - Chosen as one of 50 candidates from a competitive pool of 1,530 applicants, representing the top 3% of applicants</p>
+						<p> - Engaging in fireside chats, leadership sessions, and a variety of skill-building workshops, while also taking time for introspection on leveraging my unique "Latinidad" to inspire my family, community, and university</p>
+					</div>
+				</div>
+        <div class="entry">
+					<div class="title">
+						<span>Feb 2024 - Present</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Co-Founder & Media Chair | Student Organization for Latinos in Computing at Georgia Tech</h4>
+						<p> - Utilized graphic design skills to effectively communicate the organization's mission and values to the student body and broader community that led to a 40% rise in 10+ workshops focusing on career development in SWE</p>
+					</div>
+				</div>
+				<span class="timeline-line"></span>
+			</div>
+		</section>
+
+		<!-- section works -->
+		<section id="works" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Portfolio</h3>
+			<div class="spacer" data-height="80"></div>
+
+			<!-- portfolio filter (desktop) -->
+			<ul class="portfolio-filter list-inline">
+				<li class="current list-inline-item" data-filter="*">All Projects</li>
+				<li class="list-inline-item" data-filter=".webapp">Web Apps</li>
+				<li class="list-inline-item" data-filter=".mobileapp">Mobile Apps</li>
+				<li class="list-inline-item" data-filter=".website">Websites</li>
+				<li class="list-inline-item" data-filter=".other">Other</li>
+			</ul>
+
+			<!-- portfolio filter (mobile) -->
+			<div class="pf-filter-wrapper mb-4">
+				<select class="portfolio-filter-mobile">
+					<option value="*">Everything</option>
+					<option value=".webapp">Web Apps</option>
+					<option value=".mobileapp">Mobile Apps</option>
+					<option value=".website">Websites</option>
+					<option value=".other">Other</option>
+				</select>
+			</div>
+
+			<!-- portolio wrapper -->
+			<div class="row portfolio-wrapper">
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item webapp website">
+					<a href="works/gtmoviestore.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">GT Movie Store</h4>
+								<span class="term">Online platform to explore, preview, and purchase movies</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://ik.imagekit.io/admarm6/gt%20movie%20store%20icon.png" alt="GT Movie Store Project" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item webapp">
+					<a href="/works/vendora.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Vendora</h4>
+								<span class="term">Full stack E-Commerce web application</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://ik.imagekit.io/admarm6/vendora%20icon.png" alt="Vendora Project" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item branding webapp">
+					<a href="/works/private-zoom.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Private Zoom</h4>
+								<span class="term">A Zoom clone with private connections</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://ik.imagekit.io/vh2punfgvnw/private-zoom-icon_-4T7PK_-Qt.png" alt="Private-Zoom Project" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item webapp other">
+					<a href="works/fric.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">FRIC</h4>
+								<span class="term">Documentation and report generation tool for the Army</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://ik.imagekit.io/vh2punfgvnw/fric-icon_s4HlSRET3.png" alt="FRIC Project" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item mobileapp">
+					<a href="works/flash-feed.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Flash Feed</h4>
+								<span class="term">News application for your mobile device</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://ik.imagekit.io/admarm6/flashfeed%20icon.png" alt="Flash Feed Project" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item webapp">
+					<a href="works/tasklytic.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Tasklytic</h4>
+								<span class="term">A progressive web app to manage your tasks</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://ik.imagekit.io/admarm6/tasklytic%20icon.png" alt="Tasklytic Project" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+        <!-- portfolio item -->
+        <div class="col-md-4 col-sm-6 grid-item website">
+            <a href="works/wdc.html">
+                <div class="portfolio-item">
+                    <div class="details">
+                        <h4 class="title">Washington Dental Clinic</h4>
+                        <span class="term">Website for dental business owner</span>
                     </div>
-                    <div class="details-container">
-                        <img src="./images/education.png" alt="Education icon" class="icon"/>
-                        <h3>Education</h3>
-                        <p>Georgia Institute of Technology<br> Class of 2027<br> B.Sc. Computer Science, Public Policy</p>
+                    <span class="plus-icon">+</span>
+                    <div class="thumb">
+                        <img src="https://ik.imagekit.io/vh2punfgvnw/wdc-icon_DxMN6gZy6.png" alt="Washington Dental Clinic Project" />
+                        <div class="mask"></div>
                     </div>
                 </div>
-                <div class="text-container">
-                    <p> Hi, I'm Alan Medina, an aspiring software engineer focused on data analytics and impactful tech solutions. This semester, I’ve worked as a Data Analytics Intern for Georgia Tech Admissions and an IT Assistant at Peachtree Immediate Care, gaining hands-on experience in data-driven decision-making and technical support. I've also built coding curricula, mentored students, and enhanced predictive models through past roles. At the Google Latinx Student Leadership Summit, I sharpened my skills in data analysis and tech advocacy. As founder of the Society for Latinos in Computing (SOLC) at Georgia Tech, I’m committed to expanding representation in tech and bridging the gap between innovation and accessibility to create meaningful change. My journey is focused on bridging the gap between innovation and accessibility to create meaningful change.</p>
-                </div>
-            </div>
+            </a>
         </div>
-        <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frameworks & Languages</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Java</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Python</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Spring Boot</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>H2</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>MySQL</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>C++</h3>
-                              <p>Intermediate</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>PHP</h3>
-                              <p>Intermediate</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>R</h3>
-                              <p>Intermediate</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>HTML</h3>
-                              <p>Intermediate</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>CSS</h3>
-                              <p>Intermediate</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>JavaScript</h3>
-                              <p>Intermediate</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>React</h3>
-                              <p>Intermediate</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Angular</h3>
-                              <p>Intermediate</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>TypeScript</h3>
-                              <p>Intermediate</p>
-                            </div>
-                          </article>
+
+        <!-- portfolio item -->
+        <div class="col-md-4 col-sm-6 grid-item website">
+            <a href="works/covid-charts.html">
+                <div class="portfolio-item">
+                    <div class="details">
+                        <h4 class="title">COVID Charts</h4>
+                        <span class="term">No-nonse data charts to view COVID data in the U.S.</span>
+                    </div>
+                    <span class="plus-icon">+</span>
+                    <div class="thumb">
+                        <img src="https://ik.imagekit.io/vh2punfgvnw/covid-charts-icon_uWMNBLGTEP.png" alt="COVID Charts Project" />
+                        <div class="mask"></div>
                     </div>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Tools & Software</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>AWS EC2</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Git</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>VS Code</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Eclipse</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>JetBrains</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>JDoodle</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Notion</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Anaconda</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Jupyter</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>R Studio</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Linux</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Orchestra</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Postman</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
-                          <article>
-                            <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                              <h3>Swagger UI</h3>
-                              <p>Experienced</p>
-                            </div>
-                          </article>
+            </a>
+        </div>
+
+                <!-- portfolio item -->
+        <div class="col-md-4 col-sm-6 grid-item mobileapp">
+            <a href="works/brainrush.html">
+                <div class="portfolio-item">
+                    <div class="details">
+                        <h4 class="title">Brain Rush</h4>
+                        <span class="term">Mobile app to make custom trivia games</span>
+                    </div>
+                    <span class="plus-icon">+</span>
+                    <div class="thumb">
+                        <img src="https://ik.imagekit.io/admarm6/brainrush%20icon.png" alt="QuizR Project" />
+                        <div class="mask"></div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
-        <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./images/project-1.png" alt="Project 1" class="project-img" />
-                </div>
-                <h2 class="experience-sub-title project-title">GT Movie Store</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/JolsonZheng/GT-MoviesStore')">
-                        Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://alanm8228.pythonanywhere.com/')">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./images/project-2.png" alt="Project 2" class="project-img" />
-                </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/')">
-                        Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/')">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./images/project-3.png" alt="Project 3" class="project-img" />
-                </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/')">
-                        Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/')">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-        </div>
-        </div>
-        <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./images/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
-                <p><a href="mailto:alandmedina13@gmail.com">alandmedina13@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/alandmed/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2025 Alan D. Medina. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+
+
+			</div>
+
+			<!-- more button -->
+			<div class="load-more text-center mt-4">
+				<a href="javascript:" class="btn btn-default"><i class="fas fa-circle-notch"></i> Load more</a>
+				<!-- numbered pagination (hidden for infinite scroll) -->
+				<ul class="portfolio-pagination list-inline d-none">
+					<li class="list-inline-item">1</li>
+					<li class="list-inline-item"><a href="works-2.html">2</a></li>
+				</ul>
+			</div>
+		</section>
+
+
+		<!-- section contact -->
+		<section id="contact" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Get in touch ✍️</h3>
+			<div class="spacer" data-height="80"></div>
+
+			<div class="row">
+
+				<div class="col-md-4 mb-4 mb-md-0">
+					<!-- contact info -->
+					<div class="contact-info mb-5">
+						<i class="icon-phone"></i>
+						<div class="details">
+							<h5>Phone</h5>
+							<span>+1 (678) 654 4672</span>
+						</div>
+					</div>
+					<div class="contact-info mb-5">
+						<i class="icon-envelope"></i>
+						<div class="details">
+							<h5>Email address</h5>
+							<span>alandmedina13@gmail.com</span>
+						</div>
+					</div>
+					<div class="contact-info">
+						<i class="icon-location-pin"></i>
+						<div class="details">
+							<h5>Location</h5>
+							<span>Atlanta, Georgia</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<!-- Contact Form -->
+					<form id="contact-form" class="contact-form" method="post">
+
+						<div class="messages"></div>
+
+						<div class="row">
+							<div class="column col-md-6">
+								<!-- Name input -->
+								<div class="form-group">
+									<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your name" required="required" data-error="Name is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+
+							<div class="column col-md-6">
+								<!-- Email input -->
+								<div class="form-group">
+									<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email address" required="required" data-error="Email is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+
+							<div class="column col-md-12">
+								<!-- Email input -->
+								<div class="form-group">
+									<input type="text" class="form-control" id="InputSubject" name="InputSubject" placeholder="Subject" required="required" data-error="Subject is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+
+							<div class="column col-md-12">
+								<!-- Message textarea -->
+								<div class="form-group">
+									<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Message" required="required" data-error="Message is required."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+
+						<button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default" onclick='sendMail()'><i class="icon-paper-plane"></i>Send Message</button><!-- Send Button -->
+
+					</form>
+					<!-- Contact Form end -->
+				</div>
+
+			</div>
+
+		</section>
+
+	</main>
+
+</div>
+
+<footer class="site-footer">
+  Copyright © 2025 Alan D. Medina. All Rights Reserved.
+</footer>
+
+<!-- Go to top button -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- SCRIPTS -->
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/infinite-scroll.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
-
 </html>
