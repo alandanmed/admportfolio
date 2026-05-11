@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>MicroTorch - Alan Medina's Projects</title>
+  <meta name="description" content="Alan Medina's neural network framework built from scratch in Python">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/all.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/simple-line-icons.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/slick.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+
+<!-- preloader -->
+<div id="preloader">
+	<div class="outer">
+		<div class="spinner">
+			<div class="dot1"></div>
+			<div class="dot2"></div>
+		</div>
+	</div>
+</div>
+
+<!-- site wrapper -->
+<div class="site-wrapper">
+
+	<!-- mobile header -->
+	<div class="mobile-header py-2 px-3 mt-4">
+		<button class="menu-icon mr-2">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a href="../index.html" class="logo"><img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" /></a>
+		<a href="../index.html" class="site-title ml-2">Alan D. Medina ⚡️</a>
+	</div>
+
+	<!-- header -->
+	<header class="left float-left shadow-dark" id="header">
+		<button type="button" class="close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+		<div class="header-inner d-flex align-items-start flex-column">
+			<a href="../index.html">
+				<img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" height="60px" width="120px"/>
+			</a>
+
+			<a href="../index.html" class="site-title mt-3">Alan D. Medina</a>
+			<span class="site-slogan">Student | Creator | Engineer</span>
+
+			<!-- navigation menu -->
+			<nav>
+				<ul class="vertical-menu scrollspy">
+					<li><a href="../index.html#home"><i class="icon-home"></i>Home</a></li>
+					<li><a href="../index.html#about"><i class="icon-user"></i>About</a></li>
+					<li><a href="../index.html#services"><i class="icon-energy"></i>Tech</a></li>
+					<li><a href="../index.html#resume"><i class="icon-graduation"></i>Resume</a></li>
+					<li><a href="../index.html#works" class="active"><i class="icon-grid"></i>Portfolio</a></li>
+					<li><a href="../index.html#contact"><i class="icon-phone"></i>Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- footer -->
+			<div class="footer mt-auto">
+				<ul class="social-icons list-inline">
+					<li class="list-inline-item"><a href="https://www.instagram.com/ex.alanm/#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/alandmed/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li class="list-inline-item"><a href="https://github.com/alandanmed" target="_blank"><i class="fab fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+  <!-- main content area -->
+  <main class="content float-right">
+
+    <!-- single portfolio -->
+    <section class="single-portfolio background-white rounded padding-50 shadow-blue mt-0">
+
+      <h2 class="archive-header">MicroTorch Neural Network Framework 🧠</h2>
+
+      <!-- portfolio info -->
+      <ul class="list-inline portfolio-info mb-0 mt-4">
+        <li class="list-inline-item"><i class="fab fa-github"></i>Source Available Upon Request</li>
+        <li class="list-inline-item"><i class="fas fa-calendar"></i>Oct 2025</li>
+        <li class="list-inline-item"><i class="fas fa-code"></i>Machine Learning Framework</li>
+      </ul>
+
+      <div class="spacer" data-height="40"></div>
+
+      <!-- portfolio image -->
+      <img 
+        src="https://img.icons8.com/color/480/artificial-intelligence.png" 
+        alt="MicroTorch Neural Network Framework Project Preview" 
+        style="border-radius: 20px; width: 100%; max-height: 360px; object-fit: contain; background-color: #f3efff; padding: 45px;"
+      >
+
+      <!-- portfolio content -->
+      <div class="portfolio-content mt-5">
+        <h3>Overview</h3>
+        <p>
+          MicroTorch is a lightweight neural network framework built from scratch in Python. The project focused on understanding how deep learning libraries work underneath the surface by implementing the core pieces of a neural network without relying on a high-level machine learning framework.
+        </p>
+
+        <p>
+          Instead of only using prebuilt tools, I built the main components myself, including layers, activation functions, loss functions, forward passes, backward passes, and parameter updates. This helped me better understand how models learn through backpropagation and gradient-based optimization.
+        </p>
+
+        <p>
+          The goal of the project was to connect the theory behind neural networks with the actual code that makes training possible. It strengthened my understanding of how data moves through a model, how gradients are computed, and how weights are updated during training.
+        </p>
+
+        <h3>What I Built</h3>
+        <p>
+          I implemented a small neural network framework that could define model layers, apply activation functions, calculate loss, run backpropagation, and update model parameters during training.
+        </p>
+
+        <p>
+          I also tested the framework on small learning tasks to confirm that the model could reduce loss and learn meaningful patterns from data. This gave me hands-on practice debugging model behavior, checking tensor shapes, and tracing how errors move backward through a network.
+        </p>
+
+        <h3>Key Features</h3>
+        <p>
+          • Neural network layers implemented from scratch<br>
+          • Forward propagation for computing model predictions<br>
+          • Backpropagation for calculating gradients<br>
+          • Activation functions for nonlinear learning<br>
+          • Loss functions for measuring prediction error<br>
+          • Gradient-based parameter updates for model training<br>
+          • Small training experiments to verify model learning
+        </p>
+
+        <h3>Impact</h3>
+        <p>
+          This project helped me build a much stronger foundation in machine learning because I had to understand what was happening inside the model, not just call a library function. It made concepts like gradients, weights, activations, and loss functions feel more concrete.
+        </p>
+
+        <p>
+          MicroTorch also improved the way I debug machine learning code. When a model does not train correctly, I now have a better sense of where to look: data shapes, gradient flow, loss calculations, parameter updates, or activation behavior.
+        </p>
+
+        <p>
+          Source code is available upon request to respect course policies and academic integrity guidelines.
+        </p>
+      </div>
+
+      <h3 class="section-title">Tech Stack</h3>
+      <div class="spacer" data-height="80"></div>
+
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></i>
+            <h4 class="my-3">Python</h4>
+            <p class="mb-0">Used to build the neural network framework, training logic, and model components</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"></i>
+            <h4 class="my-3">NumPy</h4>
+            <p class="mb-0">Used for numerical operations, matrix calculations, and model data handling</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/artificial-intelligence.png" alt="Neural Network Icon"></i>
+            <h4 class="my-3">Neural Networks</h4>
+            <p class="mb-0">Used to model predictions through connected layers, activations, and learned weights</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/workflow.png" alt="Backpropagation Icon"></i>
+            <h4 class="my-3">Backpropagation</h4>
+            <p class="mb-0">Used to calculate gradients and understand how errors move backward through a model</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/combo-chart.png" alt="Gradient Descent Icon"></i>
+            <h4 class="my-3">Gradient Descent</h4>
+            <p class="mb-0">Used to update parameters and reduce prediction error during model training</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/source-code.png" alt="Object-Oriented Design Icon"></i>
+            <h4 class="my-3">OOP Design</h4>
+            <p class="mb-0">Used to organize layers, activations, losses, and training components into clean classes</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="site-footer">
+  Copyright © 2023 Alan D. Medina. All Rights Reserved.
+</footer>
+
+<!-- Go to top button -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- SCRIPTS -->
+<script src="../js/jquery-1.12.3.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.waypoints.min.js"></script>
+<script src="../js/jquery.counterup.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/infinite-scroll.min.js"></script>
+<script src="../js/imagesloaded.pkgd.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/validator.js"></script>
+<script src="../js/custom.js"></script>
+
+</body>
+
+</html>

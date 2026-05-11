@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Q-Learning TextWorld Agent - Alan Medina's Projects</title>
+  <meta name="description" content="Alan Medina's Q-learning reinforcement learning project in TextWorld">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/all.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/simple-line-icons.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/slick.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+
+<!-- preloader -->
+<div id="preloader">
+	<div class="outer">
+		<div class="spinner">
+			<div class="dot1"></div>
+			<div class="dot2"></div>
+		</div>
+	</div>
+</div>
+
+<!-- site wrapper -->
+<div class="site-wrapper">
+
+	<!-- mobile header -->
+	<div class="mobile-header py-2 px-3 mt-4">
+		<button class="menu-icon mr-2">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a href="../index.html" class="logo"><img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" /></a>
+		<a href="../index.html" class="site-title ml-2">Alan D. Medina ⚡️</a>
+	</div>
+
+	<!-- header -->
+	<header class="left float-left shadow-dark" id="header">
+		<button type="button" class="close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+		<div class="header-inner d-flex align-items-start flex-column">
+			<a href="../index.html">
+				<img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" height="60px" width="120px"/>
+			</a>
+
+			<a href="../index.html" class="site-title mt-3">Alan D. Medina</a>
+			<span class="site-slogan">Student | Creator | Engineer</span>
+
+			<!-- navigation menu -->
+			<nav>
+				<ul class="vertical-menu scrollspy">
+					<li><a href="../index.html#home"><i class="icon-home"></i>Home</a></li>
+					<li><a href="../index.html#about"><i class="icon-user"></i>About</a></li>
+					<li><a href="../index.html#services"><i class="icon-energy"></i>Tech</a></li>
+					<li><a href="../index.html#resume"><i class="icon-graduation"></i>Resume</a></li>
+					<li><a href="../index.html#works" class="active"><i class="icon-grid"></i>Portfolio</a></li>
+					<li><a href="../index.html#contact"><i class="icon-phone"></i>Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- footer -->
+			<div class="footer mt-auto">
+				<ul class="social-icons list-inline">
+					<li class="list-inline-item"><a href="https://www.instagram.com/ex.alanm/#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/alandmed/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li class="list-inline-item"><a href="https://github.com/alandanmed" target="_blank"><i class="fab fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+  <!-- main content area -->
+  <main class="content float-right">
+
+    <!-- single portfolio -->
+    <section class="single-portfolio background-white rounded padding-50 shadow-blue mt-0">
+
+      <h2 class="archive-header">Q-Learning TextWorld Agent 🧠</h2>
+
+      <!-- portfolio info -->
+      <ul class="list-inline portfolio-info mb-0 mt-4">
+        <li class="list-inline-item"><i class="fab fa-github"></i>Source Available Upon Request</li>
+        <li class="list-inline-item"><i class="fas fa-calendar"></i>Aug 2025</li>
+        <li class="list-inline-item"><i class="fas fa-code"></i>Reinforcement Learning</li>
+      </ul>
+
+      <div class="spacer" data-height="40"></div>
+
+      <!-- portfolio image -->
+      <img 
+        src="https://img.icons8.com/color/480/brain.png" 
+        alt="Q-Learning TextWorld Agent Project Preview" 
+        style="border-radius: 20px; width: 100%; max-height: 360px; object-fit: contain; background-color: #f3f1ff; padding: 45px;"
+      >
+
+      <!-- portfolio content -->
+      <div class="portfolio-content mt-5">
+        <h3>Overview</h3>
+        <p>
+          The Q-Learning TextWorld Agent project focused on training an agent to make decisions in a text-based environment using reinforcement learning. Instead of being directly told the correct action at every step, the agent learned through trial, error, rewards, and repeated interaction with the environment.
+        </p>
+
+        <p>
+          The project used Q-learning to help the agent estimate which actions were valuable in different states. Over time, the agent updated its Q-values based on the rewards it received and the future value of the states it reached.
+        </p>
+
+        <p>
+          This project helped me understand how reinforcement learning agents learn policies from experience, especially in environments where the agent has to balance exploration and exploitation.
+        </p>
+
+        <h3>What I Built</h3>
+        <p>
+          I implemented the core logic for a tabular Q-learning agent, including state representation, action selection, Q-value updates, reward tracking, and policy execution.
+        </p>
+
+        <p>
+          I also worked with exploration strategies so the agent could try new actions early in training while gradually relying more on learned behavior. This helped connect the theory of reinforcement learning with actual agent performance inside a TextWorld environment.
+        </p>
+
+        <h3>Key Features</h3>
+        <p>
+          • Tabular Q-learning implementation for decision making<br>
+          • State-action value tracking through Q-values<br>
+          • Exploration and exploitation balance during training<br>
+          • Reward-based learning from environment feedback<br>
+          • Policy execution based on learned Q-values<br>
+          • TextWorld environment interaction for text-based tasks<br>
+          • Training loop for repeated agent improvement over time
+        </p>
+
+        <h3>Impact</h3>
+        <p>
+          This project strengthened my understanding of reinforcement learning fundamentals. It helped me see how an agent can improve its decisions without supervised labels, using only rewards and experience from the environment.
+        </p>
+
+        <p>
+          It also gave me more practice debugging learning behavior. When an agent performs poorly, the issue is not always obvious. It could come from the reward structure, state representation, exploration rate, update rule, or training duration.
+        </p>
+
+        <p>
+          Source code is available upon request to respect course policies and academic integrity guidelines.
+        </p>
+      </div>
+
+      <h3 class="section-title">Tech Stack</h3>
+      <div class="spacer" data-height="80"></div>
+
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></i>
+            <h4 class="my-3">Python</h4>
+            <p class="mb-0">Used to implement the Q-learning agent, training loop, and environment logic</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"></i>
+            <h4 class="my-3">NumPy</h4>
+            <p class="mb-0">Used for managing Q-values, numerical updates, and training data structures</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i class="fas fa-brain"></i>
+            <h4 class="my-3">Q-Learning</h4>
+            <p class="mb-0">Used to update state-action values based on rewards and future expected value</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i class="fas fa-gamepad"></i>
+            <h4 class="my-3">TextWorld</h4>
+            <p class="mb-0">Used as the text-based environment where the agent learned through interaction</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i class="fas fa-random"></i>
+            <h4 class="my-3">Exploration Strategy</h4>
+            <p class="mb-0">Used to balance trying new actions with using the agent’s learned policy</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i class="fas fa-chart-line"></i>
+            <h4 class="my-3">Policy Evaluation</h4>
+            <p class="mb-0">Used to test how well the learned policy performed after training</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="site-footer">
+  Copyright © 2023 Alan D. Medina. All Rights Reserved.
+</footer>
+
+<!-- Go to top button -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- SCRIPTS -->
+<script src="../js/jquery-1.12.3.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.waypoints.min.js"></script>
+<script src="../js/jquery.counterup.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/infinite-scroll.min.js"></script>
+<script src="../js/imagesloaded.pkgd.min.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/validator.js"></script>
+<script src="../js/custom.js"></script>
+
+</body>
+
+</html>

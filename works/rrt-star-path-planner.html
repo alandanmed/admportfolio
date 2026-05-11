@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>RRT* Robot Path Planner - Alan Medina's Projects</title>
+  <meta name="description" content="Alan Medina's robotics path planning project using RRT star">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/all.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/simple-line-icons.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/slick.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+
+<!-- preloader -->
+<div id="preloader">
+	<div class="outer">
+		<div class="spinner">
+			<div class="dot1"></div>
+			<div class="dot2"></div>
+		</div>
+	</div>
+</div>
+
+<!-- site wrapper -->
+<div class="site-wrapper">
+
+	<!-- mobile header -->
+	<div class="mobile-header py-2 px-3 mt-4">
+		<button class="menu-icon mr-2">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a href="../index.html" class="logo"><img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" /></a>
+		<a href="../index.html" class="site-title ml-2">Alan D. Medina ⚡️</a>
+	</div>
+
+	<!-- header -->
+	<header class="left float-left shadow-dark" id="header">
+		<button type="button" class="close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+		<div class="header-inner d-flex align-items-start flex-column">
+			<a href="../index.html">
+				<img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" height="60px" width="120px"/>
+			</a>
+
+			<a href="../index.html" class="site-title mt-3">Alan D. Medina</a>
+			<span class="site-slogan">Student | Creator | Engineer</span>
+
+			<!-- navigation menu -->
+			<nav>
+				<ul class="vertical-menu scrollspy">
+					<li><a href="../index.html#home"><i class="icon-home"></i>Home</a></li>
+					<li><a href="../index.html#about"><i class="icon-user"></i>About</a></li>
+					<li><a href="../index.html#services"><i class="icon-energy"></i>Tech</a></li>
+					<li><a href="../index.html#resume"><i class="icon-graduation"></i>Resume</a></li>
+					<li><a href="../index.html#works" class="active"><i class="icon-grid"></i>Portfolio</a></li>
+					<li><a href="../index.html#contact"><i class="icon-phone"></i>Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- footer -->
+			<div class="footer mt-auto">
+				<ul class="social-icons list-inline">
+					<li class="list-inline-item"><a href="https://www.instagram.com/ex.alanm/#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/alandmed/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li class="list-inline-item"><a href="https://github.com/alandanmed" target="_blank"><i class="fab fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+  <!-- main content area -->
+  <main class="content float-right">
+
+    <!-- single portfolio -->
+    <section class="single-portfolio background-white rounded padding-50 shadow-blue mt-0">
+
+      <h2 class="archive-header">RRT* Robot Path Planner 🧭</h2>
+
+      <!-- portfolio info -->
+      <ul class="list-inline portfolio-info mb-0 mt-4">
+        <li class="list-inline-item"><i class="fab fa-github"></i>Source Available Upon Request</li>
+        <li class="list-inline-item"><i class="fas fa-calendar"></i>Feb 2026</li>
+        <li class="list-inline-item"><i class="fas fa-code"></i>Robotics + Algorithms</li>
+      </ul>
+
+      <div class="spacer" data-height="40"></div>
+
+      <!-- portfolio image -->
+      <img 
+        src="https://img.icons8.com/color/480/route.png" 
+        alt="RRT Star Robot Path Planner Project Preview" 
+        style="border-radius: 20px; width: 100%; max-height: 360px; object-fit: contain; background-color: #eefaf3; padding: 45px;"
+      >
+
+      <!-- portfolio content -->
+      <div class="portfolio-content mt-5">
+        <h3>Overview</h3>
+        <p>
+          The RRT* Robot Path Planner project focused on helping a robot find a safe path through maze-like environments. I implemented a sampling-based path planning algorithm that builds a tree of possible robot movements while avoiding obstacles in the environment.
+        </p>
+
+        <p>
+          Unlike a basic path search on a fixed grid, RRT* explores continuous space by randomly sampling points, connecting valid movements, and improving the path over time through rewiring. This made the project a strong introduction to real robotics planning problems where the robot has to move through space safely and efficiently.
+        </p>
+
+        <p>
+          The goal was to generate a collision-free path from a starting position to a goal position, then improve that path so the robot could follow a smoother and more practical route.
+        </p>
+
+        <h3>What I Built</h3>
+        <p>
+          I implemented the core logic for an RRT* path planner, including random sampling, nearest-neighbor search, steering toward sampled points, collision checking, cost tracking, and rewiring nearby nodes to improve path quality.
+        </p>
+
+        <p>
+          I also worked on path smoothing so the final path was not just valid, but easier for a robot to follow. This helped connect the algorithmic side of the project with the real movement constraints of a simulated robot.
+        </p>
+
+        <h3>Key Features</h3>
+        <p>
+          • RRT* sampling-based path planning algorithm<br>
+          • Random point sampling in maze environments<br>
+          • Nearest-neighbor search for expanding the planning tree<br>
+          • Collision checking to avoid invalid robot paths<br>
+          • Cost tracking and node rewiring to improve path quality<br>
+          • Path smoothing for cleaner robot navigation<br>
+          • Robotics simulation setup for testing planned paths
+        </p>
+
+        <h3>Impact</h3>
+        <p>
+          This project helped me better understand how robots make movement decisions in uncertain or obstacle-filled spaces. It also gave me hands-on experience with planning algorithms, geometry, collision detection, and the difference between a path that works in theory and a path that is useful for an actual robot.
+        </p>
+
+        <p>
+          It strengthened my ability to translate an algorithm from robotics theory into working code that can be tested visually in a simulated environment.
+        </p>
+
+        <p>
+          Source code is available upon request to respect course policies and academic integrity guidelines.
+        </p>
+      </div>
+
+      <h3 class="section-title">Tech Stack</h3>
+      <div class="spacer" data-height="80"></div>
+
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></i>
+            <h4 class="my-3">Python</h4>
+            <p class="mb-0">Used to implement the planner, helper functions, and simulation logic</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/route.png" alt="RRT Star Icon"></i>
+            <h4 class="my-3">RRT*</h4>
+            <p class="mb-0">Used to generate and improve collision-free paths through the environment</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/robot-2.png" alt="Robotics Icon"></i>
+            <h4 class="my-3">Robotics</h4>
+            <p class="mb-0">Used to connect path planning logic with robot navigation behavior</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"></i>
+            <h4 class="my-3">NumPy</h4>
+            <p class="mb-0">Used for coordinate math, distance calculations, and path operations</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+			<div class="service-item text-center">
+				<i><img width="22px" src="https://img.icons8.com/color/96/road-closure.png" alt="Collision Checking Icon"></i>
+				<h4 class="my-3">Collision Checking</h4>
+				<p class="mb-0">Used to make sure generated paths avoided obstacles and invalid movement</p>
+			</div>
+			<div class="spacer" data-height="20"></div>
+		</div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/line-chart.png" alt="Path Smoothing Icon"></i>
+            <h4 class="my-3">Path Smoothing</h4>
+            <p class="mb-0">Used to refine planned routes into cleaner paths for robot movement</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="site-footer">
+  Copyright © 2023 Alan D. Medina. All Rights Reserved.
+</footer>
+
+<!-- Go to top button -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- SCRIPTS -->
+<script src="../js/jquery-1.12.3.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.waypoints.min.js"></script>
+<script src="../js/jquery.counterup.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/infinite-scroll.min.js"></script>
+<script src="../js/imagesloaded.pkgd.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/validator.js"></script>
+<script src="../js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Audio Streaming Database - Alan Medina's Projects</title>
+  <meta name="description" content="Alan Medina's relational database project for an audio streaming platform">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/all.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/simple-line-icons.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/slick.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+
+<!-- preloader -->
+<div id="preloader">
+	<div class="outer">
+		<div class="spinner">
+			<div class="dot1"></div>
+			<div class="dot2"></div>
+		</div>
+	</div>
+</div>
+
+<!-- site wrapper -->
+<div class="site-wrapper">
+
+	<!-- mobile header -->
+	<div class="mobile-header py-2 px-3 mt-4">
+		<button class="menu-icon mr-2">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a href="../index.html" class="logo"><img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" /></a>
+		<a href="../index.html" class="site-title ml-2">Alan D. Medina ⚡️</a>
+	</div>
+
+	<!-- header -->
+	<header class="left float-left shadow-dark" id="header">
+		<button type="button" class="close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+		<div class="header-inner d-flex align-items-start flex-column">
+			<a href="../index.html">
+				<img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" height="60px" width="120px"/>
+			</a>
+
+			<a href="../index.html" class="site-title mt-3">Alan D. Medina</a>
+			<span class="site-slogan">Student | Creator | Engineer</span>
+
+			<!-- navigation menu -->
+			<nav>
+				<ul class="vertical-menu scrollspy">
+					<li><a href="../index.html#home"><i class="icon-home"></i>Home</a></li>
+					<li><a href="../index.html#about"><i class="icon-user"></i>About</a></li>
+					<li><a href="../index.html#services"><i class="icon-energy"></i>Tech</a></li>
+					<li><a href="../index.html#resume"><i class="icon-graduation"></i>Resume</a></li>
+					<li><a href="../index.html#works" class="active"><i class="icon-grid"></i>Portfolio</a></li>
+					<li><a href="../index.html#contact"><i class="icon-phone"></i>Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- footer -->
+			<div class="footer mt-auto">
+				<ul class="social-icons list-inline">
+					<li class="list-inline-item"><a href="https://www.instagram.com/ex.alanm/#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/alandmed/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li class="list-inline-item"><a href="https://github.com/alandanmed" target="_blank"><i class="fab fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+  <!-- main content area -->
+  <main class="content float-right">
+
+    <!-- single portfolio -->
+    <section class="single-portfolio background-white rounded padding-50 shadow-blue mt-0">
+
+      <h2 class="archive-header">Audio Streaming Database System 🎧</h2>
+
+      <!-- portfolio info -->
+      <ul class="list-inline portfolio-info mb-0 mt-4">
+        <li class="list-inline-item"><i class="fab fa-github"></i>Source Available Upon Request</li>
+        <li class="list-inline-item"><i class="fas fa-calendar"></i>Jan 2026 - May 2026</li>
+        <li class="list-inline-item"><i class="fas fa-database"></i>SQL + Database Design</li>
+      </ul>
+
+      <div class="spacer" data-height="40"></div>
+
+      <!-- portfolio image -->
+      <img 
+        src="https://img.icons8.com/color/480/database.png" 
+        alt="Audio Streaming Database Project Preview" 
+        style="border-radius: 20px; width: 100%; max-height: 360px; object-fit: contain; background-color: #eef7ff; padding: 45px;"
+      >
+
+      <!-- portfolio content -->
+      <div class="portfolio-content mt-5">
+        <h3>Overview</h3>
+        <p>
+          The Audio Streaming Database System is a relational database project designed for an audio streaming platform. The database modeled core platform features such as users, creators, songs, albums, podcasts, playlists, subscriptions, streaming activity, and social interactions.
+        </p>
+
+        <p>
+          The goal was to design a database that could support real application workflows, not just store isolated records. I worked through the process of translating platform requirements into relational tables, constraints, relationships, views, and stored procedures.
+        </p>
+
+        <p>
+          This project helped me understand how backend systems depend on strong data modeling. A clean schema makes it easier to support features, avoid duplicate data, protect data integrity, and write useful queries for analytics or application behavior.
+        </p>
+
+        <h3>What I Built</h3>
+        <p>
+          I designed and implemented a MySQL database for an audio streaming service. The system included normalized relational tables, primary and foreign key constraints, update and delete rules, SQL views, and stored procedures for platform actions.
+        </p>
+
+        <p>
+          I also built queries and database logic to support common streaming platform workflows, such as managing playlists, tracking streaming activity, handling subscriptions, uploading content, and summarizing creator or listener data.
+        </p>
+
+        <h3>Key Features</h3>
+        <p>
+          • Relational schema for users, creators, songs, albums, podcasts, playlists, and subscriptions<br>
+          • Primary keys, foreign keys, and constraints to protect data integrity<br>
+          • Normalized table design to reduce duplication and improve maintainability<br>
+          • SQL views for playlist summaries, creator statistics, podcast analytics, and streaming activity<br>
+          • Stored procedures for renewing subscriptions, duplicating playlists, uploading songs, and merging playlists<br>
+          • Query logic to support platform reporting and user-facing database operations
+        </p>
+
+        <h3>Impact</h3>
+        <p>
+          This project gave me hands-on experience designing a database that could support a realistic software product. It strengthened my ability to think through relationships between entities, enforce data consistency, and write SQL that supports both application features and analytics.
+        </p>
+
+        <p>
+          It also helped me better understand how database design decisions affect the rest of a system. A well-designed schema makes backend logic cleaner, queries easier to maintain, and product features easier to extend.
+        </p>
+
+        <p>
+          Source code is available upon request to respect course policies and academic integrity guidelines.
+        </p>
+      </div>
+
+      <h3 class="section-title">Tech Stack</h3>
+      <div class="spacer" data-height="80"></div>
+
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"></i>
+            <h4 class="my-3">MySQL</h4>
+            <p class="mb-0">Used to build the relational database, tables, constraints, views, and procedures</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/database.png" alt="Database Schema Icon"></i>
+            <h4 class="my-3">Schema Design</h4>
+            <p class="mb-0">Used to model users, creators, audio content, playlists, subscriptions, and activity</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/data-sheet.png" alt="SQL Icon"></i>
+            <h4 class="my-3">SQL Queries</h4>
+            <p class="mb-0">Used to retrieve, filter, join, aggregate, and summarize streaming platform data</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/workflow.png" alt="Stored Procedures Icon"></i>
+            <h4 class="my-3">Stored Procedures</h4>
+            <p class="mb-0">Used to handle repeatable platform actions like playlist duplication and subscription renewal</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/combo-chart.png" alt="SQL Views Icon"></i>
+            <h4 class="my-3">SQL Views</h4>
+            <p class="mb-0">Used to create reusable summaries for playlists, creators, podcasts, and streaming analytics</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/flow-chart.png" alt="Relational Design Icon"></i>
+            <h4 class="my-3">Relational Design</h4>
+            <p class="mb-0">Used to organize relationships between users, content, playlists, subscriptions, and creators</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="site-footer">
+  Copyright © 2023 Alan D. Medina. All Rights Reserved.
+</footer>
+
+<!-- Go to top button -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- SCRIPTS -->
+<script src="../js/jquery-1.12.3.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.waypoints.min.js"></script>
+<script src="../js/jquery.counterup.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/infinite-scroll.min.js"></script>
+<script src="../js/imagesloaded.pkgd.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/validator.js"></script>
+<script src="../js/custom.js"></script>
+
+</body>
+
+</html>

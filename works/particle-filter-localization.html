@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Particle Filter Localization - Alan Medina's Projects</title>
+  <meta name="description" content="Alan Medina's particle filter robot localization project">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/all.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/simple-line-icons.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/slick.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+
+<!-- preloader -->
+<div id="preloader">
+	<div class="outer">
+		<div class="spinner">
+			<div class="dot1"></div>
+			<div class="dot2"></div>
+		</div>
+	</div>
+</div>
+
+<!-- site wrapper -->
+<div class="site-wrapper">
+
+	<!-- mobile header -->
+	<div class="mobile-header py-2 px-3 mt-4">
+		<button class="menu-icon mr-2">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a href="../index.html" class="logo"><img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" /></a>
+		<a href="../index.html" class="site-title ml-2">Alan D. Medina ⚡️</a>
+	</div>
+
+	<!-- header -->
+	<header class="left float-left shadow-dark" id="header">
+		<button type="button" class="close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+		<div class="header-inner d-flex align-items-start flex-column">
+			<a href="../index.html">
+				<img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" height="60px" width="120px"/>
+			</a>
+
+			<a href="../index.html" class="site-title mt-3">Alan D. Medina</a>
+			<span class="site-slogan">Student | Creator | Engineer</span>
+
+			<!-- navigation menu -->
+			<nav>
+				<ul class="vertical-menu scrollspy">
+					<li><a href="../index.html#home"><i class="icon-home"></i>Home</a></li>
+					<li><a href="../index.html#about"><i class="icon-user"></i>About</a></li>
+					<li><a href="../index.html#services"><i class="icon-energy"></i>Tech</a></li>
+					<li><a href="../index.html#resume"><i class="icon-graduation"></i>Resume</a></li>
+					<li><a href="../index.html#works" class="active"><i class="icon-grid"></i>Portfolio</a></li>
+					<li><a href="../index.html#contact"><i class="icon-phone"></i>Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- footer -->
+			<div class="footer mt-auto">
+				<ul class="social-icons list-inline">
+					<li class="list-inline-item"><a href="https://www.instagram.com/ex.alanm/#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/alandmed/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li class="list-inline-item"><a href="https://github.com/alandanmed" target="_blank"><i class="fab fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+  <!-- main content area -->
+  <main class="content float-right">
+
+    <!-- single portfolio -->
+    <section class="single-portfolio background-white rounded padding-50 shadow-blue mt-0">
+
+      <h2 class="archive-header">Particle Filter Robot Localization 📡</h2>
+
+      <!-- portfolio info -->
+      <ul class="list-inline portfolio-info mb-0 mt-4">
+        <li class="list-inline-item"><i class="fab fa-github"></i>Source Available Upon Request</li>
+        <li class="list-inline-item"><i class="fas fa-calendar"></i>Mar 2026</li>
+        <li class="list-inline-item"><i class="fas fa-code"></i>Robotics + Probabilistic Localization</li>
+      </ul>
+
+      <div class="spacer" data-height="40"></div>
+
+      <!-- portfolio image -->
+      <img 
+        src="https://img.icons8.com/color/480/radar.png" 
+        alt="Particle Filter Robot Localization Project Preview" 
+        style="border-radius: 20px; width: 100%; max-height: 360px; object-fit: contain; background-color: #eef7ff; padding: 45px;"
+      >
+
+      <!-- portfolio content -->
+      <div class="portfolio-content mt-5">
+        <h3>Overview</h3>
+        <p>
+          The Particle Filter Robot Localization project focused on estimating a robot’s position in an environment using probabilistic reasoning. Instead of assuming the robot always knows exactly where it is, the system represented many possible robot poses as particles and updated those particles as new sensor information became available.
+        </p>
+
+        <p>
+          This project modeled a common robotics problem: localization under uncertainty. A robot may have noisy movement, imperfect sensor readings, and multiple places in the environment that look similar. The particle filter helped narrow down the robot’s likely position by combining motion updates with sensor-based probability updates.
+        </p>
+
+        <p>
+          The goal was to help the robot localize itself in a maze-like environment using simulated sensor data, probability weights, resampling, and repeated belief updates over time.
+        </p>
+
+        <h3>What I Built</h3>
+        <p>
+          I implemented the core logic for a particle filter localization system, including particle initialization, motion updates, sensor likelihood scoring, weight normalization, and particle resampling.
+        </p>
+
+        <p>
+          I also worked through how noisy measurements affect localization accuracy. The project required debugging both the math and the simulation behavior, since the particle cloud needed to move, spread, and converge in a way that matched the robot’s actual position over time.
+        </p>
+
+        <h3>Key Features</h3>
+        <p>
+          • Particle-based belief representation for robot location<br>
+          • Motion update step for predicting new particle positions<br>
+          • Sensor likelihood scoring for comparing predicted and observed measurements<br>
+          • Weight normalization for probability-based pose estimation<br>
+          • Resampling logic to focus particles around more likely robot positions<br>
+          • Localization behavior in maze-like environments with sensor uncertainty<br>
+          • Visualization-friendly particle cloud behavior for debugging and analysis
+        </p>
+
+        <h3>Impact</h3>
+        <p>
+          This project helped me understand how robots can make decisions even when they do not have perfect information. It showed me how probability, sensor data, and movement models work together to estimate where a robot is in the world.
+        </p>
+
+        <p>
+          It also strengthened my ability to debug algorithms that are not always deterministic. With particle filters, the system’s behavior depends on randomness, sensor noise, and probability distributions, so I had to think carefully about whether the robot was converging for the right reasons.
+        </p>
+
+        <p>
+          Source code is available upon request to respect course policies and academic integrity guidelines.
+        </p>
+      </div>
+
+      <h3 class="section-title">Tech Stack</h3>
+      <div class="spacer" data-height="80"></div>
+
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"></i>
+            <h4 class="my-3">Python</h4>
+            <p class="mb-0">Used to implement the particle filter, localization logic, and simulation behavior</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"></i>
+            <h4 class="my-3">NumPy</h4>
+            <p class="mb-0">Used for particle arrays, probability weights, and numerical localization calculations</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/radar.png" alt="Particle Filter Icon"></i>
+            <h4 class="my-3">Particle Filter</h4>
+            <p class="mb-0">Used to estimate robot position through particles, weights, and resampling</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/place-marker.png" alt="Localization Icon"></i>
+            <h4 class="my-3">Localization</h4>
+            <p class="mb-0">Used to estimate the robot’s position from motion and sensor information</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/sensor.png" alt="Sensor Model Icon"></i>
+            <h4 class="my-3">Sensor Model</h4>
+            <p class="mb-0">Used to score how likely particles were based on simulated robot measurements</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/statistics.png" alt="Probabilistic Robotics Icon"></i>
+            <h4 class="my-3">Probabilistic Robotics</h4>
+            <p class="mb-0">Used to handle uncertainty through probability distributions and belief updates</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="site-footer">
+  Copyright © 2023 Alan D. Medina. All Rights Reserved.
+</footer>
+
+<!-- Go to top button -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- SCRIPTS -->
+<script src="../js/jquery-1.12.3.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.waypoints.min.js"></script>
+<script src="../js/jquery.counterup.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/infinite-scroll.min.js"></script>
+<script src="../js/imagesloaded.pkgd.min.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/validator.js"></script>
+<script src="../js/custom.js"></script>
+
+</body>
+
+</html>

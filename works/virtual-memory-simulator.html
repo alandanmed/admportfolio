@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Virtual Memory Simulator - Alan Medina's Projects</title>
+  <meta name="description" content="Alan Medina's virtual memory simulator project in C">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/all.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/simple-line-icons.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/slick.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+
+<!-- preloader -->
+<div id="preloader">
+	<div class="outer">
+		<div class="spinner">
+			<div class="dot1"></div>
+			<div class="dot2"></div>
+		</div>
+	</div>
+</div>
+
+<!-- site wrapper -->
+<div class="site-wrapper">
+
+	<!-- mobile header -->
+	<div class="mobile-header py-2 px-3 mt-4">
+		<button class="menu-icon mr-2">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a href="../index.html" class="logo"><img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" /></a>
+		<a href="../index.html" class="site-title ml-2">Alan D. Medina ⚡️</a>
+	</div>
+
+	<!-- header -->
+	<header class="left float-left shadow-dark" id="header">
+		<button type="button" class="close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+		<div class="header-inner d-flex align-items-start flex-column">
+			<a href="../index.html">
+				<img src="../images/profile-pic.png" alt="Alan D. Medina" style="border-radius: 20px;" height="60px" width="120px"/>
+			</a>
+
+			<a href="../index.html" class="site-title mt-3">Alan D. Medina</a>
+			<span class="site-slogan">Student | Creator | Engineer</span>
+
+			<!-- navigation menu -->
+			<nav>
+				<ul class="vertical-menu scrollspy">
+					<li><a href="../index.html#home"><i class="icon-home"></i>Home</a></li>
+					<li><a href="../index.html#about"><i class="icon-user"></i>About</a></li>
+					<li><a href="../index.html#services"><i class="icon-energy"></i>Tech</a></li>
+					<li><a href="../index.html#resume"><i class="icon-graduation"></i>Resume</a></li>
+					<li><a href="../index.html#works" class="active"><i class="icon-grid"></i>Portfolio</a></li>
+					<li><a href="../index.html#contact"><i class="icon-phone"></i>Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- footer -->
+			<div class="footer mt-auto">
+				<ul class="social-icons list-inline">
+					<li class="list-inline-item"><a href="https://www.instagram.com/ex.alanm/#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/alandmed/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li class="list-inline-item"><a href="https://github.com/alandanmed" target="_blank"><i class="fab fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+  <!-- main content area -->
+  <main class="content float-right">
+
+    <!-- single portfolio -->
+    <section class="single-portfolio background-white rounded padding-50 shadow-blue mt-0">
+
+      <h2 class="archive-header">Virtual Memory Simulator 💾</h2>
+
+      <!-- portfolio info -->
+      <ul class="list-inline portfolio-info mb-0 mt-4">
+        <li class="list-inline-item"><i class="fab fa-github"></i>Source Available Upon Request</li>
+        <li class="list-inline-item"><i class="fas fa-calendar"></i>Apr 2026</li>
+        <li class="list-inline-item"><i class="fas fa-code"></i>C + Operating Systems</li>
+      </ul>
+
+      <div class="spacer" data-height="40"></div>
+
+      <!-- portfolio image -->
+      <img 
+        src="https://img.icons8.com/color/480/memory-slot.png" 
+        alt="Virtual Memory Simulator Project Preview" 
+        style="border-radius: 20px; width: 100%; max-height: 360px; object-fit: contain; background-color: #f3f7ff; padding: 45px;"
+      >
+
+      <!-- portfolio content -->
+      <div class="portfolio-content mt-5">
+        <h3>Overview</h3>
+        <p>
+          The Virtual Memory Simulator project focused on implementing the core pieces of a virtual memory system in C. The simulator modeled how an operating system translates virtual addresses, manages physical memory frames, handles page faults, and chooses pages to evict when memory is full.
+        </p>
+
+        <p>
+          This project helped me understand what happens behind the scenes when a program accesses memory. Instead of thinking of memory as one large space, I worked with page tables, frame tables, page replacement policies, dirty bits, reference bits, and memory access statistics.
+        </p>
+
+        <p>
+          The goal was to simulate how operating systems manage memory efficiently while balancing correctness, performance, and limited physical resources.
+        </p>
+
+        <h3>What I Built</h3>
+        <p>
+          I implemented the main virtual memory logic for address translation, page table management, page fault handling, frame allocation, and eviction behavior. The simulator had to correctly update memory metadata while responding to reads and writes from simulated processes.
+        </p>
+
+        <p>
+          I also implemented page replacement behavior using policies such as Clock Sweep and Approximate LRU, then used simulator statistics to evaluate performance through metrics like memory accesses, page faults, writebacks, and AMAT.
+        </p>
+
+        <h3>Key Features</h3>
+        <p>
+          • Virtual address translation through page tables<br>
+          • Page fault detection and handling<br>
+          • Frame allocation and eviction when physical memory is full<br>
+          • Clock Sweep page replacement policy<br>
+          • Approximate LRU page replacement behavior<br>
+          • Dirty bit and reference bit tracking<br>
+          • Memory access statistics and AMAT performance analysis
+        </p>
+
+        <h3>Impact</h3>
+        <p>
+          This project strengthened my understanding of operating systems and low-level memory management. It showed me how much work happens between a memory access and the actual data being loaded or stored.
+        </p>
+
+        <p>
+          It also gave me more practice debugging C code where pointer logic, struct fields, and state updates all have to be handled carefully. Small mistakes in virtual memory logic can create major correctness issues, so this project helped me become more disciplined with systems-level debugging.
+        </p>
+
+        <p>
+          Source code is available upon request to respect course policies and academic integrity guidelines.
+        </p>
+      </div>
+
+      <h3 class="section-title">Tech Stack</h3>
+      <div class="spacer" data-height="80"></div>
+
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"></i>
+            <h4 class="my-3">C</h4>
+            <p class="mb-0">Used to implement page tables, frame tables, memory access logic, and simulator behavior</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/memory-slot.png" alt="Virtual Memory Icon"></i>
+            <h4 class="my-3">Virtual Memory</h4>
+            <p class="mb-0">Used to model address translation, physical frames, page faults, and memory state</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/table.png" alt="Page Table Icon"></i>
+            <h4 class="my-3">Page Tables</h4>
+            <p class="mb-0">Used to track mappings between virtual pages and physical memory frames</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/error.png" alt="Page Fault Icon"></i>
+            <h4 class="my-3">Page Faults</h4>
+            <p class="mb-0">Used to detect missing pages and load them into available or evicted frames</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/restart.png" alt="Replacement Policy Icon"></i>
+            <h4 class="my-3">Replacement Policies</h4>
+            <p class="mb-0">Used to choose eviction targets through Clock Sweep and Approximate LRU logic</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="service-item text-center">
+            <i><img width="22px" src="https://img.icons8.com/color/96/combo-chart.png" alt="Performance Analysis Icon"></i>
+            <h4 class="my-3">Performance Analysis</h4>
+            <p class="mb-0">Used to evaluate page faults, writebacks, memory accesses, and AMAT results</p>
+          </div>
+          <div class="spacer" data-height="20"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="site-footer">
+  Copyright © 2023 Alan D. Medina. All Rights Reserved.
+</footer>
+
+<!-- Go to top button -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- SCRIPTS -->
+<script src="../js/jquery-1.12.3.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.waypoints.min.js"></script>
+<script src="../js/jquery.counterup.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/infinite-scroll.min.js"></script>
+<script src="../js/imagesloaded.pkgd.min.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/validator.js"></script>
+<script src="../js/custom.js"></script>
+
+</body>
+
+</html>
