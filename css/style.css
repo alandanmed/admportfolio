@@ -1693,3 +1693,12 @@ html, body {
   background: transparent;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.skill-description {
+	font-size: 14px;
+	line-height: 1.6;
+	color: #777;
+	margin-top: 12px;
+	margin-bottom: 0;
+}
